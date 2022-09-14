@@ -17,10 +17,13 @@ for (n = 'a'; n <= 'z'; n++)
 {
 
 _putchar(c);
+
 }
 
 co++;
 
 _putchar('\n');
+
 }
+
 }
