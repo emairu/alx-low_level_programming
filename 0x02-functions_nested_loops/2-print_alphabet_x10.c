@@ -4,23 +4,23 @@
  *
  * Return: Always success
  */
-void print_alphabet_x10(void)
+void print_alphabet_x10(void);
 {
-	int n, co;
-	co = 0;
+int n;
+int co = 0;
 
-	while (co <10)
-	{
+while (co <= 9)
+{
 
-		for(n = 'a'; n = 'z'; n++)
-		{
-			_putchar(n);
-		}
+for (n = 'a'; n = 'z'; n++)
+{
+_putchar(n);
+}
 
-		co++;
+co++;
 
-		_putchar('\n');
+_putchar('\n');
 
-	}
+}
 
 }
