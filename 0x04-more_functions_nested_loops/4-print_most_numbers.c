@@ -1,14 +1,15 @@
-#include <stdio.h>                                                                                                                                              
-#include "main.h"                                                                                                                                               
+#include <stdio.h>
+#include "main.h"
 
 /**
- * print_numbers - entry point
- * Description: print_most_numbers - print 0 to 9, skip 2 and 4                                               
- * Return: 0                                                                                                                                                    
-*/           
+ * print_most_numbers - entry point
+ * Description: prints numbers from 0 to 9, skip 2 and 4
+ * Return: 0
+ */
+
 void print_most_numbers(void)
 {
-	char i;
+	int i;
 
 	for (i = '0'; i <= '9'; i++)
 	{
