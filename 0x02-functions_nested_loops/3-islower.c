@@ -2,13 +2,11 @@
 
 /**
  * _islower - entry point
- *
  * Description: checks for lowercase characters
- *
  * @c: character to check
- *
  * Return: 1 if lowercase, 0 if uppercas
 */
+
 int _islower(int c)
 {
 
@@ -18,6 +16,6 @@ int _islower(int c)
 	}
 	else
 	{
-		return (0);	
+		return (0);
 	}
 }
