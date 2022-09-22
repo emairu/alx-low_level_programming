@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * infinite_add - adds two numbers
  * @n1: number1
@@ -7,8 +6,7 @@
  * @r: result
  * @size_r: size result
  * Return: r addition
-*/
-
+**/
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int i = 0, j = 0, a, b, c, n, aux, dec = 0;
@@ -30,15 +28,11 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	dec = c > 9 ? 1 : 0;
 	}
 	if (dec == 1)
-	{ 
-		r[n] = '1';
-		r[n + 1] = '\0';
-       	}
+	{ r[n] = '1';
+	r[n + 1] = '\0'; }
 	else
-	{
-	       	r[n] = '\0';
-		n--;
-       	}
+	{ r[n] = '\0';
+	n--; }
 	for (i = 0; i < n + 1; i++)
 	{
 	for (j = 0; j < (n - i); j++)
