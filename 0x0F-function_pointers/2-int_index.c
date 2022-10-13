@@ -1,19 +1,25 @@
-#include "function_pointers.h"
 #include <stddef.h>
+#include <stdlib.h>
+#include "function_pointers.h"
 
 /**
- * print_name - prints a name.
- * @name: input name.
- * @f: function pointer.
- *
- * Return: no return.
+ * int_index - searches for  an integer from an array
+ * @array: array of integers
+ * @size: size of array
+ * @cmp: function used to find integer
+ * Return: integer or 0
  */
-void print_name(char *name, void (*f)(char *))
 
+int int_index(int *array, int size, int (*cmp)(int))
 {
+	int i;
 
-		if (name && f)
-
-					f(name);
-
+	if (array == NULL || cmp == NULL || size <= 0)
+		return (-1);
+	for (i = 0; i < size; i++)
+	{
+		if (cmp(array[i]) > 0)
+			return (i);
+	}
+	return (-1);
 }
