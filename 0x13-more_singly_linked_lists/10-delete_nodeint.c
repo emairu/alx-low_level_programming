@@ -27,9 +27,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int idx)
 			*head = (*head)->next;
 			free(temp);
 			return (1);
-		}	
+		}
 		count++;
 		temp = temp->next;
-	}
+	}	
 	return (-1);
 }
